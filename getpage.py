@@ -39,12 +39,12 @@ def clean(link):
 
 def getJSON(page):
     params = urlencode({
-      'format': 'json',   # TODO: compléter ceci
-      'action': 'parse',  # TODO: compléter ceci
-      'prop': 'text',     # TODO: compléter ceci
+      'format': 'json',
+      'action': 'parse',
+      'prop': 'text',
       'redirects': 'true',
       'page': page})
-    API = "https://fr.wikipedia.org/w/api.php"  # TODO: changer ceci
+    API = "https://fr.wikipedia.org/w/api.php"
     response = urlopen(API + "?" + params)
     return response.read().decode('utf-8')
 
@@ -52,8 +52,8 @@ def getJSON(page):
 def getRawPage(page):
     parsed = loads(getJSON(page))
     try:
-        title = parsed['parse']['title']        # TODO: remplacer ceci
-        content = parsed['parse']['text']['*']  # TODO: remplacer ceci
+        title = parsed['parse']['title']
+        content = parsed['parse']['text']['*']
         return title, content
     except KeyError:
         # La page demandée n'existe pas
