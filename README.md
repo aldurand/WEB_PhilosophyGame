@@ -16,12 +16,17 @@
 - Until Philosophy is in the list and the gamer select it.
 
 
-*getPage.py* contains the functions created to request the Wikipedia API, parse and process the response and return (for a given page) the 10 first links to other Wiki pages.
+---
 
-*philosophie.py* use the Flask framework to develop the web application.
+The python code is composed of :
 
+- *getPage.py* contains the functions created to request the Wikipedia API, parse and process the response and return (for a given page) the 10 first links to other Wiki pages.
 
-# > To play the game :
+- *philosophie.py* use the Flask framework to develop the web application.
+
+---
+
+# To play the game :
 Fisrt, make sure you have Python 3 with the following packages : bs4, json, urllib, pprint, flask.
 1) Download the repository as a ZIP file and Unzip
 2) In a terminal window, browse to the directory where you have unzipped the archive and run the command:
