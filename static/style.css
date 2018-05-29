@@ -1,0 +1,107 @@
+/* Le CSS va ici */
+
+html, body {
+        margin: 5;
+        padding: 0;
+        color: white;
+    }
+    
+   body {
+        background-color: rgb(255, 255, 255);
+        font-family: Verdana, sans-serif;
+        font-size: 100%;
+        color: black;
+    }
+
+   h1 {
+       text-align: center;
+       font-size: 250%; 
+       margin-top: 5%;
+       margin-bottom: 5%
+    }
+
+   h2 {
+        font-size: 120%;
+        padding-left: 15px;
+    }
+
+    h3 {
+        font-size: 120%;
+    }
+
+
+    section {
+        display: flex;
+    }
+
+    article {
+        flex: 1;  /* largeur de 1 pour tous les articles */
+        margin-bottom: 5%;
+    }
+
+    article:nth-of-type(1) {
+        margin-left: 10%;
+        margin-right: 2%;
+    }
+
+    article:nth-of-type(2) {
+        margin-right: 15%;
+        flex: 0.333;   /* pour le 2 article (score): largeur = 0.333% */
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+    }
+    article:nth-of-type(2) div:first-child {   /* chiffre du score */
+        font-size: 1000%;
+        border-bottom: 5px solid #000000;
+    }
+    article:nth-of-type(2) div:nth-child(2) {  /* "score" */
+        font-size: 400%;
+    }
+
+    input { 
+        font-size: 100%;
+    }
+
+
+    .form_index {
+        text-align: center;
+    }
+    .form_quit {
+        text-align: center;
+    }
+
+    
+    .form_10choices {
+        text-align: left;
+    }
+    .proposition  {
+        line-height: 24px;
+        margin-left: 15%;
+    }
+    .proposition label:hover {
+        font-size: 108%;
+        /* font-weight: bold; */
+    }
+    #philosophie {
+        color: red;
+    }
+
+
+    #win_message {
+        margin-top: 5%;
+        line-height: 300%;
+        text-align: center;
+        font-size: 150%;
+        color: #1aac4a;
+        border: 1px solid #000000;
+    }
+
+    #defeat_or_other_message {
+        margin-top: 5%;
+        line-height: 300%;
+        text-align: center;
+        font-size: 100%;
+        color: rgb(233, 77, 77);
+        border: 1px solid #000000;
+    }
