@@ -1,0 +1,65 @@
+{% extends "index.html" %}
+      {% block body %}
+      
+      <h1>
+        A la recherche de la philosophie...
+      </h1>
+      
+
+      <!-- Utilisation de Section pour diviser l'écran en 2 colonnes-->
+      <section>
+
+        <article>   <!-- 1ere colonne : affichage des 10 liens de l'article -->
+          <h2>
+            Depuis l'article : {{ session.title }}
+          </h2>
+
+          <form action="/move" method="POST" class="form_10choices">
+            <legend>(cliquer sur un article)</legend>
+            <br>
+            {% for link in session.links %}
+              {% if link == "Philosophie" %}
+                <div class="proposition" id="philosophie">
+                    <input type="radio" id="{{link}}" name="destination" value="{{link}}" onclick="submit()">
+                    <label for="{{link}}">{{link}}</label>
+                </div>
+              {% else %}
+                <div class="proposition">
+                    <input type="radio" id="{{link}}" name="destination" value="{{link}}" onclick="submit()">
+                    <label for="{{link}}">{{link}}</label>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </form>
+        </article>
+
+        <article class="score">   <!-- 2eme colonne : affichage du Score -->
+          <div>
+            {{session.score}}
+          </div>
+          <div>
+            score
+          </div>
+        </article>
+
+      </section>
+
+
+      <h3>   <!-- Abandon partie en cours -->
+        <form action="/quit_game" method="POST", class="form_quit">
+          <input type="submit" value="Abandonner la partie en cours">
+        </form>
+      </h3>
+
+
+      <!-- Vérif que le cache marche bien
+      <br>
+      <div>
+          <p>Cache =</p>
+          {% for tuple in session.cache %}
+            <p>{{tuple}} : {{session.cache[tuple]}}</p>
+          {% endfor %}
+        </div> -->
+      
+
+      {% endblock %}
