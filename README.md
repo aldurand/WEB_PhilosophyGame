@@ -22,6 +22,11 @@ The python code is composed of :
 
 - *getPage.py* contains the functions created to request the Wikipedia API, parse and process the response and return (for a given page) the 10 first links to other Wiki pages.
 
+> Note that the game will use the "french" wikipedia. If you want to use another language, juste replace "fr" by another language code ("en" for english) in the following code line (line 47 of *getPage.py*): 
+```python
+API = "https://fr.wikipedia.org/w/api.php"
+```
+
 - *philosophie.py* use the Flask framework to develop the web application.
 
 ---
