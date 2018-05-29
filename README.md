@@ -38,3 +38,12 @@ $ python philosophie.py (or $ python3 philosophie.py, depending on your python c
 
 When you want to stop the game, just close the tab on your browser and quit the python script on your terminal (CTRL+C).
 
+---
+
+## Some Sreenshots of the Application
+
+!(0_start_game.png)
+![Screenshot](1_first_article.png)
+![Screenshot](2_in_game.png)
+![Screenshot](3_almost_win.png)
+![Screenshot](4_win.png)
