@@ -22,16 +22,11 @@ The python code is composed of :
 
 - *getPage.py* contains the functions created to request the Wikipedia API, parse and process the response and return (for a given page) the 10 first links to other Wiki pages.
 
-> Note that the game will use the "french" wikipedia. If you want to use another language, juste replace "fr" by another language code ("en" for english) in the following code line (line 47 of *getPage.py*): 
-```python
-API = "https://fr.wikipedia.org/w/api.php"
-```
-
 - *philosophie.py* use the Flask framework to develop the web application.
 
 ---
 
-# To play the game :
+# To play the game : (Note that the game will use the "french" wikipedia)
 Fisrt, make sure you have Python 3 with the following packages : bs4, json, urllib, pprint, flask.
 1) Download the repository as a ZIP file and Unzip
 2) In a terminal window, browse to the directory where you have unzipped the archive and run the command:
