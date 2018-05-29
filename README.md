@@ -1,7 +1,7 @@
 ## Lab of "INF344-Donnees du Web"  @ Telecom ParisTech - 2017/2018
 
 
-The objective of this Lab is to create a game based on Wikipedia.
+**The objective of this Lab is to create a game based on Wikipedia.**
 
 **The game is named "Tous les chemins mènent à la Philosophie" ("All roads lead to Philosophy").**
 
