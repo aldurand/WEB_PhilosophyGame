@@ -31,7 +31,7 @@ Fisrt, make sure you have Python 3 with the following packages : bs4, json, urll
 1) Download the repository as a ZIP file and Unzip
 2) In a terminal window, browse to the directory where you have unzipped the archive and run the command:
 ```
-$ python philosophie.py (or $ python3 philosophie.py, depending on your configuration)
+$ python philosophie.py (or $ python3 philosophie.py, depending on your python configuration)
 ```
 3) In your web browser, go to http://127.0.0.1:5000/ (or http://localhost:5000/)
 4) Let's play !
