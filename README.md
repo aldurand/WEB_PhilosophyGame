@@ -43,7 +43,13 @@ When you want to stop the game, just close the tab on your browser and quit the 
 ## Some Sreenshots of the Application
 
 <kbd><img src="screenshots/0_start_game.png" /></kbd>
+
 <kbd><img src="screenshots/1_first_article.png" /></kbd>
+
 <kbd><img src="screenshots/2_in_game.png" /></kbd>
+
 <kbd><img src="screenshots/3_almost_win.png" /></kbd>
+
 <kbd><img src="screenshots/4_win.png" /></kbd>
+
+
