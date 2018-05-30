@@ -24,6 +24,10 @@ The python code is composed of :
 
 - *philosophie.py* use the Flask framework to develop the web application.
 
+For the templates rendering :
+
+- HTLM with Jinja2 + CSS
+
 ---
 
 # To play the game :
