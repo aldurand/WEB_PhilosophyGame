@@ -26,7 +26,9 @@ The python code is composed of :
 
 ---
 
-# To play the game : (Note that the game will use the "french" wikipedia)
+# To play the game :
+> (Note that the game is in french and will use the "french" wikipedia)
+
 Fisrt, make sure you have Python 3 with the following packages : bs4, json, urllib, pprint, flask.
 1) Download the repository as a ZIP file and Unzip
 2) In a terminal window, browse to the directory where you have unzipped the archive and run the command:
